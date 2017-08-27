@@ -1,0 +1,6 @@
+# IDE Files
+.idea/
+*.iml
+
+# Project Files
+node_modules/

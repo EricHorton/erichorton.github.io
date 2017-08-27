@@ -1,0 +1,32 @@
+{
+    "title": "EricHorton",
+    "name": "erichorton",
+    "version": "1.0.0",
+    "description": "Personal website.",
+    "private": true,
+    "homepage": "https://erichorton.me",
+    "license": "MIT",
+    "author": "Eric Horton",
+    "contributors": [
+        "Eric Horton (erichorton.io)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EricHorton/erichorton.github.io"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.2.0",
+        "bootstrap": "4.1.3",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1",
+        "merge-stream": "^1.0.1"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-clean-css": "3.9.4",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.1"
+    }
+}

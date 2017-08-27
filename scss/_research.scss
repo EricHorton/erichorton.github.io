@@ -1,0 +1,32 @@
+.research-section {
+  padding: 2rem 0;
+  .featured-text {
+    padding: 2rem;
+  }
+  .featured-text-left {
+    @extend .featured-text;
+    @media (min-width: 992px) {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid $primary;
+    }
+  }
+  .featured-text-right {
+    @extend .featured-text;
+    @media (min-width: 992px) {
+      padding: 0 2rem 0 0;
+      border-right: 0.5rem solid $primary;
+    }
+  }
+  .research-text {
+    padding: 3rem;
+    font-size: 90%;
+    @media (min-width: 992px) {
+      padding: 5rem;
+      hr {
+        border-color: $primary;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
+  }
+}
