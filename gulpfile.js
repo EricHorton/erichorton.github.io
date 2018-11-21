@@ -1,20 +1,30 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const header = require('gulp-header');
+/**
+ * Gulp configuration file.
+ */
+
+
+// NPM modules
+const gulp     = require('gulp');
 const cleanCSS = require('gulp-clean-css');
-const rename = require("gulp-rename");
-const uglify = require('gulp-uglify');
+const header   = require('gulp-header');
+const merge    = require('merge-stream');
+const rename   = require("gulp-rename");
+const sass     = require('gulp-sass');
+const uglify   = require('gulp-uglify');
+
+
+// Local modules
 const pkg = require('./package.json');
-const merge = require('merge-stream');
+
 
 // Set the banner content
-const banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
+const BANNER = ['/*!\n',
+  ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * Copyright 2013 - ' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' */\n',
   ''
 ].join('');
+
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
@@ -54,7 +64,7 @@ gulp.task('css:compile', function() {
     .pipe(sass.sync({
       outputStyle: 'expanded'
     }).on('error', sass.logError))
-    .pipe(header(banner, {
+    .pipe(header(BANNER, {
       pkg: pkg
     }))
     .pipe(gulp.dest('./css'))
@@ -86,7 +96,7 @@ gulp.task('js:minify', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(header(banner, {
+    .pipe(header(BANNER, {
       pkg: pkg
     }))
     .pipe(gulp.dest('./js'));
@@ -100,6 +110,6 @@ gulp.task('default', gulp.series(['css', 'js', 'vendor']));
 
 // Dev task
 gulp.task('dev', gulp.series('css', 'js', function() {
-  gulp.watch('./scss/*.scss', ['css']);
-  gulp.watch('./js/*.js', ['js']);
+    gulp.watch('./scss/*.scss', gulp.series('css'));
+    gulp.watch('./js/*.js', gulp.series('js'));
 }));
