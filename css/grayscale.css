@@ -198,6 +198,16 @@
   }
 }
 
+.research-section .research-link-icon {
+  width: 1em;
+  margin-right: 1em;
+}
+
+.research-section .research-link-text {
+  display: inline-block;
+  width: 7.5em;
+}
+
 .contact-section {
   padding: 5rem 0 0;
 }
