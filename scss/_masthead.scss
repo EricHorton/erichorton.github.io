@@ -8,6 +8,12 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  .webp & {
+    background-image: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.webp');
+  }
+  .no-webp & {
+    background-image: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.jpg');
+  }
   h1 {
     font-family: 'Varela Round';
     font-size: 2.5rem;
@@ -40,10 +46,4 @@
       font-size: 1.25rem;
     }
   }
-}
-.webp .masthead{
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.webp');
-}
-.no-webp .masthead{
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.jpg');
 }

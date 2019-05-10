@@ -94,6 +94,14 @@
   background-size: cover;
 }
 
+.webp .masthead {
+  background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/ca.webp");
+}
+
+.no-webp .masthead {
+  background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/ca.jpg");
+}
+
 .masthead h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
@@ -130,14 +138,6 @@
     max-width: 60rem;
     font-size: 1.25rem;
   }
-}
-
-.webp .masthead {
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/ca.webp");
-}
-
-.no-webp .masthead {
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/ca.jpg");
 }
 
 .btn {
