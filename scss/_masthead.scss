@@ -4,7 +4,6 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -41,4 +40,10 @@
       font-size: 1.25rem;
     }
   }
+}
+.webp .masthead{
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.webp');
+}
+.no-webp .masthead{
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/ca.jpg');
 }
