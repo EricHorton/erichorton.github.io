@@ -3,6 +3,10 @@
   .featured-text {
     padding: 2rem;
   }
+  .highlight {
+    @extend .featured-text;
+    border: 0.5rem solid $primary;
+  }
   .featured-text-left {
     @extend .featured-text;
     @media (min-width: 992px) {

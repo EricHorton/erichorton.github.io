@@ -171,8 +171,12 @@
   padding: 2rem 0;
 }
 
-.research-section .featured-text, .research-section .featured-text-left, .research-section .featured-text-right {
+.research-section .featured-text, .research-section .highlight, .research-section .featured-text-left, .research-section .featured-text-right {
   padding: 2rem;
+}
+
+.research-section .highlight {
+  border: 0.5rem solid #64a19d;
 }
 
 @media (min-width: 992px) {
