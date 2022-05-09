@@ -51,9 +51,9 @@
         <div class="mx-auto text-center">
           <h1 class="text-white text-left">Hello</h1>
           <h2 class="text-white text-left mx-auto mt-2 mb-5">
-            I am a PhD student and researcher at North Carolina State University. My work focuses on applying novel
-            techniques in software engineering to create tools for automatically configuring, repairing, and managing
-            applications and application infrastructure.
+            I am a software engineer and researcher. My work focuses on applying novel techniques in software
+            engineering to create tools for automatically configuring, repairing, and managing applications and
+            application infrastructure.
           </h2>
           <a href="#research" class="btn btn-primary js-scroll-trigger">Research</a>
         </div>
@@ -87,7 +87,7 @@
 <!--        </div>-->
 
         <div class="row no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-12 text-left">
+          <div class="col-md-12 col-xl-12 text-left">
             <div class="featured-text-left">
               <h4>Infer &mdash; Automatic configuration of computing environments</h4>
               <div class="text-black-50 mb-10">
@@ -95,9 +95,8 @@
                   Code configuration is hard. Studies have shown that only about a quarter of code snippets found on
                   websites like Stack Overflow and GitHub's gist system are directly executable. Many of these snippets
                   fail to execute because of missing code dependencies, services, or environment variables. Infer
-                  focuses on automatically generating complete computing environment configurations for arbitrary code
-                  bases using the Docker container system. Environment configurations are exported as a Dockerfile,
-                  enabling execution with reproducible configuration.
+                  focuses on automatically generating computing environments and configuration scripts for arbitrary
+                  code bases.
                 </p>
               </div>
               <div>
@@ -109,7 +108,7 @@
                       An evaluation of the executability of Python code snippets with a focus on dependency errors.
                       <a class="card-link" href="https://icsme2018.github.io/">ICSME 2018</a>.
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <div class="list-group list-group-flush">
                       <a href="https://arxiv.org/abs/1808.04919" class="list-group-item">
                         <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                         <span class="research-link-text">ArXiv Preprint</span>
@@ -122,7 +121,7 @@
                         <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                         <span class="research-link-text">Source Code</span>
                       </a>
-                    </ul>
+                    </div>
                   </div>
                   <div class="card">
                     <div class="card-body">
@@ -131,7 +130,7 @@
                       installation ordering that respects transitive dependence at compile time.
                       <a class="card-link" href="https://2019.icse-conferences.org/">ICSE 2019</a>.
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <div class="list-group list-group-flush">
                       <a href="https://arxiv.org/abs/1905.11127" class="list-group-item">
                         <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                         <span class="research-link-text">ArXiv Preprint</span>
@@ -144,7 +143,7 @@
                         <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                         <span class="research-link-text">Source Code</span>
                       </a>
-                    </ul>
+                    </div>
                   </div>
                   <div class="card">
                     <div class="card-body">
@@ -153,20 +152,42 @@
                       bad dependency versions. Find dependency versions that enable execution.
                       <a class="card-link" href="https://2019.ase-conferences.org/">ASE 2019</a>.
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <div class="list-group list-group-flush">
                       <a href="https://arxiv.org/abs/1909.06251" class="list-group-item">
                         <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                         <span class="research-link-text">ArXiv Preprint</span>
                       </a>
-                      <!--<a href="https://ieeexplore.ieee.org/document/8530031" class="list-group-item">-->
-                      <!--<i class="fas fa-2x fa-book align-middle research-link-icon"></i>-->
-                      <!--<span class="research-link-text">IEEE Xplore</span>-->
-                      <!--</a>-->
+                      <a href="https://ieeexplore.ieee.org/document/8952262" class="list-group-item">
+                        <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
+                        <span class="research-link-text">IEEE Xplore</span>
+                      </a>
                       <a href="https://github.com/v2-project/v2" class="list-group-item">
                         <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                         <span class="research-link-text">Source Code</span>
                       </a>
-                    </ul>
+                    </div>
+                  </div>
+                  <div class="w-100 mb-4 d-none d-sm-block"></div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Dozer</h4>
+                      Automatically migrate shell commands into high-level configuration languages like Ansible.
+                      <a class="card-link" href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>.
+                    </div>
+                    <div class="list-group list-group-flush">
+                      <a href="https://arxiv.org/abs/2203.12065" class="list-group-item">
+                        <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
+                        <span class="research-link-text">ArXiv Preprint</span>
+                      </a>
+<!--                      <a href="https://ieeexplore.ieee.org/document/8530031" class="list-group-item">-->
+<!--                        <i class="fas fa-2x fa-book align-middle research-link-icon"></i>-->
+<!--                        <span class="research-link-text">IEEE Xplore</span>-->
+<!--                      </a>-->
+                      <a href="https://github.com/config-migration/dozer" class="list-group-item">
+                        <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
+                        <span class="research-link-text">Source Code</span>
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -190,16 +211,20 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <ul class="list-group list-group-flush">
+                  <div class="list-group list-group-flush">
                     <a href="https://arxiv.org/abs/1805.01041" class="list-group-item">
                       <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                       <span class="research-link-text">ArXiv Preprint</span>
+                    </a>
+                    <a href="https://dl.acm.org/doi/fullHtml/10.1145/3467968" class="list-group-item">
+                      <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
+                      <span class="research-link-text">ACM</span>
                     </a>
                     <a href="https://github.com/TheoryInPractice/practical-oct" class="list-group-item">
                       <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                       <span class="research-link-text">Source Code</span>
                     </a>
-                  </ul>
+                  </div>
                 </div>
 
               </div>
@@ -224,7 +249,7 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <ul class="list-group list-group-flush">
+                  <div class="list-group list-group-flush">
                     <a href="https://arxiv.org/abs/1804.05966" class="list-group-item">
                       <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                       <span class="research-link-text">ArXiv Preprint</span>
@@ -237,7 +262,7 @@
                       <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                       <span class="research-link-text">Source Code</span>
                     </a>
-                  </ul>
+                  </div>
                 </div>
 
               </div>
@@ -262,7 +287,7 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <ul class="list-group list-group-flush">
+                  <div class="list-group list-group-flush">
                     <a href="https://dl.acm.org/citation.cfm?id=3338661" class="list-group-item">
                       <i class="fas fa-2x fa-book align-middle research-link-icon"></i>
                       <span class="research-link-text">ACM</span>
@@ -271,7 +296,7 @@
                       <i class="fab fa-2x fa-github align-middle research-link-icon"></i>
                       <span class="research-link-text">Source Code</span>
                     </a>
-                  </ul>
+                  </div>
                 </div>
 
               </div>
