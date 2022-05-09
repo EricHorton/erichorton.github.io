@@ -9,7 +9,7 @@ const cleanCSS = require('gulp-clean-css');
 const header   = require('gulp-header');
 const merge    = require('merge-stream');
 const rename   = require("gulp-rename");
-const sass     = require('gulp-sass');
+const sass     = require('gulp-sass')(require('sass'))
 const uglify   = require('gulp-uglify');
 
 
